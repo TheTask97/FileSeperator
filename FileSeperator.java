@@ -6,6 +6,9 @@ public class FileSeperator {
 
 	public static void main(String[] args) throws FileNotFoundException {
 
+		
+		String createPath;
+		String readPath;
 		String[] sigma = { "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r",
 				"s", "t", "u", "v", "w", "x", "y", "z" };
 		String[] sigmaGrossesBoy = { "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P",
@@ -17,7 +20,7 @@ public class FileSeperator {
 			BufferedReader bfr = new BufferedReader(new FileReader(f));
 			try {
 				BufferedWriter bfw = new BufferedWriter(
-						new FileWriter("C:\\BaranTest\\schreiben\\" + sigma[i] + "LeftText.txt", true));
+						new FileWriter(createPath + sigma[i] + ".txt", true));
 				System.out.println(sigmaGrossesBoy[i]);
 
 				while ((s = bfr.readLine()) != null) {
