@@ -32,7 +32,7 @@ public class CsvGen {
 
 		int counter = 0;
 		FileWriter fw = new FileWriter(
-				new File("C:\\TestData\Generated\\" + "generatedFile_" + dTargetSize + caseFileSize + ".csv"));
+				new File("C:\\TestData\\Generated\\" + "generatedFile_" + dTargetSize + caseFileSize + ".csv"));
 
 		// write Header
 		header = "NAME" +seperator + "ACTIVITY" + seperator + "BIRTHDATE"+ seperator + "MAIL"; // this defines the header
